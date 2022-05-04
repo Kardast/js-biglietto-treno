@@ -19,17 +19,19 @@ console.log("young è: " + young);
 const old = priceKm * 0.40;
 console.log("old è: " + old);
 
+let finalPrice
+
 // Conteggio sconti o non
 if (userAge < 18) {
-    const finalPrice = priceKm - young;
+    finalPrice = priceKm - young;
     console.log("Il costo è " + (priceKm - young));
 
 } else if (userAge > 65) {
-    const finalPrice = priceKm - old;
+    finalPrice = priceKm - old;
     console.log("Il costo è " + (priceKm - old));
 
 } else {
-    const finalPrice = priceKm;
+    finalPrice = priceKm;
     console.log("Il costo è " + priceKm);
 }
 finalPrice = finalPrice.toFixed(2);
