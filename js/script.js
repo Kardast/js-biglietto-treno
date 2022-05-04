@@ -19,7 +19,8 @@ console.log("young è: " + young);
 const old = priceKm * 0.40;
 console.log("old è: " + old);
 
-let finalPrice
+let finalPrice = priceKm;
+console.log(finalPrice);
 
 // Conteggio sconti o non
 if (userAge < 18) {
@@ -29,11 +30,8 @@ if (userAge < 18) {
 } else if (userAge > 65) {
     finalPrice = priceKm - old;
     console.log("Il costo è " + (priceKm - old));
-
-} else {
-    finalPrice = priceKm;
-    console.log("Il costo è " + priceKm);
 }
+
 finalPrice = finalPrice.toFixed(2);
 
 // Far dire alla macchina quanto spende l'utente
